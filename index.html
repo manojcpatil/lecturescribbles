@@ -1,3 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: none;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: none;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<h1 style="font-size:200%; color:White;text-align:center;"> Lecture Notes</h1>
+
+<div class="tab">
+  <button style="font-size:150%; color:red;text-align:left;" class="tablinks" onclick="openCity(event, 'London')">Real Analysis</button>
+  <button style="font-size:150%; color:red;text-align:left;" class="tablinks" onclick="openCity(event, 'Paris')">Stochastic Processes</button>
+  <button style="font-size:150%; color:red;text-align:left;" class="tablinks" onclick="openCity(event, 'Tokyo')">Clinical Trials</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h1 style="font-size:200%; color:White;text-align:left;"> Real Analysis Lecture Scribbles</h1>
+<a style="font-size:150%; color:pink;" href="Real%20Analysis/Real Analysis Lecture Scribbles Part 1.pdf">1. Part-I: Page 01-48</a><br><br><br>
+
+<a style="font-size:150%; color:pink;" href="Real%20Analysis/Real_Analysis_Notes.pdf">2. Real Analysis Slides</a><br><br><br>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1 style="font-size:200%; color:White;text-align:left;"> Stochastic Processes Lecture Scribbles</h1>
+
+<a style="font-size:150%; color:pink;" href="Stochastic Processes/Part-1 Revision.pdf">1. Part-I: Revision</a><br><br><br>
+<a style="font-size:150%; color:pink;" href="Stochastic Processes/Part-2 Introduction to Stochastic Processes.pdf">2. Part-II: Introduction to Stochastic Processes</a><br><br><br>
+<a style="font-size:150%; color:pink;" href="Stochastic Processes/Part-3 Markov Chains.pdf">3. Part-III: Markov Chains </a><br><br><br>
+<a style="font-size:150%; color:pink;" href="Stochastic Processes/Part-4 Branching Processes.pdf">4. Part-IV: Branching Processes </a><br><br><br>
+<a style="font-size:150%; color:pink;" href="Stochastic Processes/Part-5 Poisson Process-Part-I.pdf">5. Part-V: Poisson Process-Part-I </a><br><br><br>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+<h1 style="font-size:200%; color:White;text-align:left;"> Design and Analysis of Clinical Trials Lecture Scribbles</h1>
+<a style="font-size:150%; color:pink;"  href="Design and Analysis of Clinical Trials/Clinical Trials Lecture Scribbles.pdf">1. Design and Analysis of Clinical Trials Lecture Scribbles</a><br><br><br>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html>
 <head>
   <header>
@@ -30,22 +156,9 @@ body {
 </style>
 
 <body>
-<h1 style="font-size:200%; color:White;text-align:center;"> Lecture Notes</h1>
 
-<h1 style="font-size:200%; color:White;text-align:left;"> Real Analysis</h1>
 
-<a style="font-size:150%; color:white;" href="lecturescribbles/Real%20Analysis/Real Analysis Lecture Scribbles Part 1.pdf">Part-I: Page 01-48</a><br><br><br>
 
-<a style="font-size:150%; color:white;" href="lecturescribbles/Real%20Analysis/Real_Analysis_Notes.pdf">Real Analysis</a><br><br><br>
-
-<h1 style="font-size:200%; color:White;text-align:left;"> Stochastic Processes</h1>
-<a style="font-size:150%; color:white;" href="lecturescribbles/Stochastic Processes/Part-1 Revision.pdf">Part-I: </a><br><br><br>
-<a style="font-size:150%; color:white;" href="lecturescribbles/Stochastic Processes/Part-2 Introduction to Stochastic Processes.pdf">Part-II: Introduction to Stochastic Processes</a><br><br><br>
-<a style="font-size:150%; color:white;" href="lecturescribbles/Stochastic Processes/Part-3 Markov Chains.pdf">Part-III: Markov Chains </a><br><br><br>
-<a style="font-size:150%; color:white;" href="lecturescribbles/Stochastic Processes/Part-4 Branching Processes.pdf">Part-IV: Branching Processes </a><br><br><br>
-<a style="font-size:150%; color:white;" href="lecturescribbles/Stochastic Processes/Part-5 Poisson Process-Part-I.pdf">Part-V: Poisson Process-Part-I </a><br><br><br>
-
-<a style="font-size:150%; color:white;"  href="lecturescribbles/Design and Analysis of Clinical Trials/Clinical Trials Lecture Scribbles.pdf">Design and Analysis of Clinical Trials</a><br><br><br>
 
 </script>
 </body>
